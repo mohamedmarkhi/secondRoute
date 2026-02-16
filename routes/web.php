@@ -26,6 +26,5 @@ Route::get('/percontroller', [MyController::class,'parController']); //controlle
 
 Route::get('/anotherRoute', [Mycontroller::class,'AnotherRoute']); //same controller with another route
 
-
-Route::get('/price', [Mycontroller::class,'Aissa']); //same controller with another route
+Route::get('/golden', [Mycontroller::class,'GoldenNumber']); //same controller with another route
 
