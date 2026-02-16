@@ -1,0 +1,217 @@
+/* =====================
+   RESET & BASE
+   ===================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: #ffffff;
+    color: #111111;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* =====================
+   HEADER
+   ===================== */
+#stId {
+    margin: 40px 0 30px;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-items:  space-around;
+}
+#link{
+    top: 80px;
+}
+#stId h1 {
+    font-size: 2rem;
+    color: #556B2F; /* olive */
+}
+
+/* =====================
+   NAVIGATION
+   ===================== */
+ul {
+    list-style: none;
+    display: flex;
+    gap: 22px;
+    padding: 12px 28px;
+    border: 2px solid #556B2F;
+    border-radius: 30px;
+    margin-bottom: 60px;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #111;
+    padding: 8px 18px;
+    border-radius: 22px;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+ul li a:hover {
+    background: #556B2F;
+    color: #fff;
+}
+
+/* =====================
+   SECTIONS
+   ===================== */
+section {
+    width: 100%;
+    max-width: 1100px;
+    padding: 0 20px 70px;
+    text-align: center;
+}
+
+/* =====================
+   PRICING
+   ===================== */
+.pricing {
+    display: flex;
+    gap: 35px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* Card */
+.card {
+    width: 300px;
+    padding: 32px 24px;
+    border-radius: 20px;
+    border: 2px solid #556B2F;
+    text-align: center;
+    transition: transform 0.35s ease, box-shadow 0.35s ease;
+    background: #fff;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 18px 40px rgba(0,0,0,0.15);
+}
+
+.card h2 {
+    color: #556B2F;
+    margin-bottom: 10px;
+}
+
+/* Price */
+.price {
+    font-size: 2.1rem;
+    font-weight: bold;
+    margin: 14px 0;
+}
+
+.price span {
+    font-size: 0.85rem;
+    color: #666;
+}
+
+/* =====================
+   FEATURES LIST (FIXED UX)
+   ===================== */
+.features {
+    list-style: none;
+    margin: 22px 0;
+    padding: 0;
+    display: block; /* IMPORTANT */
+}
+
+.features li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 7px 0;
+    font-size: 0.95rem;
+    color: #333;
+}
+
+/* Check icon */
+.features li::before {
+    content: "✔";
+    color: #556B2F;
+    font-weight: bold;
+}
+
+/* =====================
+   FEATURED PLAN
+   ===================== */
+.featured {
+    border-color: #C68642; /* caramel */
+}
+
+.featured h2 {
+    color: #C68642;
+}
+
+.featured .features li::before {
+    color: #C68642;
+}
+
+/* =====================
+   BUTTONS
+   ===================== */
+button {
+    margin-top: 15px;
+    padding: 12px 26px;
+    border-radius: 26px;
+    border: none;
+    cursor: pointer;
+    background: #556B2F;
+    color: #fff;
+    font-size: 1rem;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+    background: #C68642;
+    transform: scale(1.05);
+}
+
+/* =====================
+   CONTACT FORM
+   ===================== */
+form {
+    width: 100%;
+    max-width: 420px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+label {
+    font-size: 0.9rem;
+}
+
+input {
+    padding: 12px 14px;
+    border-radius: 12px;
+    border: 2px solid #556B2F;
+    font-size: 0.95rem;
+}
+
+/* =====================
+   RESPONSIVE
+   ===================== */
+@media (max-width: 768px) {
+    ul {
+        flex-direction: column;
+        align-items: center;
+        width: 90%;
+    }
+
+    .card {
+        width: 90%;
+    }
+
+    #stId h1 {
+        font-size: 1.6rem;
+    }
+}
