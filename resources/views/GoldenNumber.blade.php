@@ -25,6 +25,8 @@
 
     @endsection
 
+    {{$Msg}}
+
     {{-- URL('images/img1') --}}
     
 {{-- <a href='{{ route('price', ['from' => 'HomePage']) }}'>Price</a>

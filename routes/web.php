@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\MyController;
+use App\Http\Controllers\RandController;
 
 use Illuminate\Support\Facades\Route;
 
@@ -26,5 +27,5 @@ Route::get('/percontroller', [MyController::class,'parController']); //controlle
 
 Route::get('/anotherRoute', [Mycontroller::class,'AnotherRoute']); //same controller with another route
 
-Route::get('/golden', [Mycontroller::class,'GoldenNumber']); //same controller with another route
+Route::get('/golden', [RandController::class,'goldenNumber']); //same controller with another route
 
