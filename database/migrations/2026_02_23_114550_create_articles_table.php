@@ -16,7 +16,7 @@ return new class extends Migration
             $table->string("title");
             $table->text('content');
             $table->double("prix");
-            $table->timestamps();   
+            $table->timestamps();    //create 2 columns : 1/ created at... 2/ updated at...
 
         });
     }
