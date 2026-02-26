@@ -8,3 +8,6 @@ class Article extends Model
 {
     //
 }
+
+
+

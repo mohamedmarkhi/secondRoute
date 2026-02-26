@@ -3,17 +3,25 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Models\Article;
+
 
 class PostController extends Controller
 {
     /**
      * Display a listing of the resource.
      */
+    // public function index()
+    // {
+    //     //
+    //     echo 'Hell now';
+    // }
+
     public function index()
     {
-        //
-        echo 'Hell now';
-    }
+        $articles = Article::all();
+        return $articles;
+    }   
 
     /**
      * Show the form for creating a new resource.
