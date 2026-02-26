@@ -18,8 +18,8 @@ class PostController extends Controller
 
     public function index()
     {
-        $produits = Produit::all();
-        return $produits;
+        $TousLesProduits = Produit::all();
+        return view('Articles.index',compact('TousLesProduits'));
     }   
 
     /**
