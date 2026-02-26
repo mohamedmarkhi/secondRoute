@@ -3,8 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use Illuminate\Models\Article;
-
+use App\Models\Produit;
 
 class PostController extends Controller
 {
@@ -19,8 +18,8 @@ class PostController extends Controller
 
     public function index()
     {
-        $articles = Article::all();
-        return $articles;
+        $produits = Produit::all();
+        return $produits;
     }   
 
     /**
