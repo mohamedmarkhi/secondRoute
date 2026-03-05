@@ -36,6 +36,8 @@ Route::get('/welcome', function () {
     return view('welcome');
 });
 
+Route::resource('Produits', CtrProduits::class);
+
 Route::resource('Produits', PostController::class);
 
 Route::resource('AppModules', CtrModules::class);
