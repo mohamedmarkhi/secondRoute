@@ -49,7 +49,11 @@ class PostController extends Controller
     public function show(string $id)
     {
         //tatbyyen resource li exacte b specified id 
-        return "je suis dans show et l'id est : " . $id;
+        // return "je suis dans show et l'id est : " . $id;
+
+        $p = Produit::findOrFail($id);
+
+        return view('Articles.shows', ['unProduit' => $p]);
     }
 
     /**

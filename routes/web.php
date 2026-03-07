@@ -41,3 +41,5 @@ Route::get('/welcome', function () {
 Route::resource('Produits', PostController::class);
 
 Route::resource('AppModules', CtrModules::class);
+
+Route::resource('articles', PostController::class);
