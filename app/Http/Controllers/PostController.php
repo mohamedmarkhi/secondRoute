@@ -27,7 +27,8 @@ class PostController extends Controller
      */
     public function create()
     {
-        //twjjed l form li ghan3emmruha
+        //tatyben form bach tcreate new resource
+        return view('Articles.create');
     }
 
     /**
@@ -36,6 +37,10 @@ class PostController extends Controller
     public function store(Request $request)
     {
         //tan3emmru fiha dkchi
+        echo $request->title; 
+        echo $request->content;
+        echo $request->author;
+
     }
 
     /**
@@ -44,6 +49,7 @@ class PostController extends Controller
     public function show(string $id)
     {
         //tatbyyen resource li exacte b specified id 
+        return "je suis dans show et l'id est : " . $id;
     }
 
     /**
