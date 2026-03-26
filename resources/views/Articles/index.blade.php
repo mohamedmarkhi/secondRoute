@@ -12,7 +12,7 @@
             <td>{{$Produit->id}}</td>
             <td>{{$Produit->created_at}}</td>
             <td>{{$Produit->updated_at}}</td>
-            <td><a href="{{ route('articles.show', $Produit->id) }}">Show</a></td>
+            <td><a href="{{ route('articles.show', $Produit->['id']) }}">Show</a></td>
         </tr>
         @endforeach
     </table>

@@ -61,6 +61,8 @@ class PostController extends Controller
      */
     public function edit(string $id)
     {
+        $Prod = Produit::findOrFail($id);
+        return view( 'Articles.edit', compact('Prod'));
         //tatmodifier whd i id unique (tayemchi l update(next step) machi taytenregistra f DB)
     }
 
